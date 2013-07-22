@@ -1,0 +1,332 @@
+/*
+====================================================================================
+--------------------------->>>>>>>   FONTS   <<<<<<<--------------------------------
+==================================================================================== */
+
+@font-face {
+
+}
+
+/* 
+====================================================================================
+------------------------------>>>>>>> GLOBALS <<<<<<<-------------------------------
+==================================================================================== 
+|                                                                                   |
+|                                                                                   |
+|       .---------------.                                                           |
+_______/   HTML & BODY   \_________________________________________________________*/                                                         
+    
+html{
+        -webkit-overflow-scrolling: touch;
+        -webkit-tap-highlight-color: #f3f5f6;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        margin:0;
+        text-align: left;
+    }
+
+body              { margin: 0; padding: 0; font-family: 'PT Sans', sans-serif;width: 100%; }
+html              { margin: 0; padding: 0; font-family: 'PT Sans', sans-serif;width: 100%; }
+
+
+/*      .-----------.
+________|  Headers  |__________________________________________ */
+
+h1,h2,h3,h4,h5,h6 {margin: 0 0 10px 0;font-family: Arial, Helvetica, sans-serif;font-weight: bold;}
+
+h1 {font-size: 2em;}/*32px;*/
+h2 {font-size: 1.85em;}/*30px;*/
+h3 {font-size: 1.56em;}/*25px;*/
+h4 {font-size: 1.25em;}/*20px;*/
+h5 {font-size: 1.25;}/*18px;*/
+h6 {font-size: 1em;}/*16px;*/
+
+/*      .----------------------.
+________|  Paragraph Elements  |________________________________ */
+
+a,a:hover,a:focus { color:#FE662C;text-decoration:none; }
+a:visited         { }
+a:hover           { text-decoration: none }
+p   {font-size: .75em;/*12px;*/line-height:1.325em;/*21px;*/margin-bottom: 15px;color: #595959;}
+
+img { max-width: 100%;height: auto;width: auto\9; /* ie8 */ }
+
+
+/* 
+====================================================================================
+---------------------------->>>>>>> PAGE SYLING <<<<<<<-----------------------------
+==================================================================================== */
+
+/*      .----------.
+________|  Layout  |__________________________________________*/
+
+
+/*|=|=|GRID|SYSTEM|=|=|*/
+
+/*Rows*/
+.row                                { width: 100%;}
+.row:before,.row:after              { content: " ";display: table; }
+.row:after                          { clear: both; }
+
+/*Columns*/
+.col                                { float:left;transition: all .3s ease; }
+.col:before,.col:after              { content: " ";display: table; }
+.col:after                          { clear: both; }
+
+/*Wrapper*/
+.wrapper                            { margin: 0 auto;max-width: 1024px;padding: 0 3%; }
+.wrapper:before,.wrapper:after      { content: " ";display: table; }
+.wrapper:after                      { clear: both; }
+
+/*Blocks*/
+.block                              { position: relative;transition: all .3s ease;   }
+.block:before,.block:after          { content: " ";display: table; }
+.block:after                        { clear: both; }
+.block img                          { width:100%;overflow:hidden;-moz-border-radius: 3px; border-radius: 3px;box-shadow: 0px 2px 2px rgba(0,0,0,0.4);-moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.4);}
+/*-------*/
+.col-1                              { width: 100% }
+
+.col-2                              { width: 47%;float:left;margin-right: 6%}
+.col-2 + .col-2                     { margin-right: 0; }
+
+.col-3                              { width: 31%;float:left;margin-right: 3%}
+.col-3 + .col-3 + .col-3            { margin-right: 0; }
+
+.col-4                              { width: 22.5%;float:left;margin-right: 3%}
+.col-4 + .col-4 + .col-4 + .col-4   { margin-right: 0; }
+
+.col-5                              { width: 17.5%;float:left;margin-right: 3%}
+.col-5 + .col-5 + .col-5 + .col-5  + .col-5             
+                                    { margin-right: 0; }
+
+.col-6                              { width: 14%;float:left;margin-right: 3%}
+.col-6 + .col-6 + .col-6 + .col-6 + .col-6 + .col-6 
+                                    { margin-right: 0; }
+
+
+/*      .----------.
+________|  Header  |__________________________________________*/
+
+
+
+
+/*      .--------.
+________|  HOME  |__________________________________________*/
+
+
+
+
+/*      .---------.
+________|  Pages  |__________________________________________*/
+
+
+
+/*      .-------------.
+________|  Sub-Pages  |__________________________________________*/
+
+
+
+/*      .-----------------.
+________|  Layout-Single  |__________________________________________*/
+
+
+
+
+/*      .--------------.
+________|  Contact Us  |__________________________________________*/
+
+
+
+
+
+/*      .----------.
+________|  Footer  |__________________________________________*/
+
+
+
+
+/* 
+====================================================================================
+--------------------------->>>>>>> HELPER CLASSES <<<<<<<---------------------------
+==================================================================================== */
+
+.noise {position: relative;z-index: 1;}
+.noise:before {content: "";position: absolute;z-index: -1;top:0;bottom:0;left:0;right:0;background-image: url(data:image/png;base64,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);}
+
+/*Image replacement*/
+.ir {background-color: transparent;border: 0;overflow: hidden;}
+.ir:before {content: "";display: block;width: 0;height: 100%;}
+
+/*Hide from both screenreaders and browsers*/
+.hidden {display: none !important;visibility: hidden;}
+
+/*Clearfix*/
+.cf:before,.cf:after {content: " ";display: table;}
+.cf:after {clear: both;}
+
+.float-left   {float:left}
+.float-right  {float:right}
+.align-left   {float:left; margin: 0 15px 0 0}
+.align-right  {float:right; margin: 0 0 0 15px}
+.clear        {clear:both}
+.center       {display: table;width: 100%;height: 100%;}
+.center span  {display: table-cell; vertical-align: middle; text-align: center;}
+.margins      {margin:15px}
+.push-top     {margin-top:15px}
+.push-right   {margin-right:15px}
+.push-bottom  {margin-bottom:15px}
+.push-left    {margin-left:15px}
+.border       {border:10px solid #eee}
+.text-left    {text-align:left}
+.text-right   {text-align:right}
+.text-center  {text-align:center}
+.text-justify {text-align:justify}
+.underline    {text-decoration:underline}
+.highlight    {}
+
+
+/*      .----------.
+________|  Colors  |________________________________________ */
+
+.orange         { background-color: #FE5F22 }
+.blue           { background-color: #2E90D3;border: 2px solid #0899FC;}
+.orange-c       { color: #FE5F22; }
+.blue-c         { color: #138DEC;}
+.orange:hover   { background-color: #DF6000 }
+.blue:hover     { background-color: #1583CE}
+
+
+/*
+====================================================================================
+------------------------------>>>>>>> MEDIA QUERIES <<<<<<<-------------------------
+==================================================================================== */
+
+
+/* Smartphones (portrait and landscape)*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .col { float:none !important; width:100% !important;}
+}
+
+/* Smartphones (landscape)*/
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait)*/
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape)*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape)*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait)*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops*/
+@media only screen and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens*/
+@media only screen and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4,5*/
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+/*----------------*/
+/* 
+====================================================================================
+--------------------------->>>>>>> MOBILE <<<<<<<-----------------------------------
+==================================================================================== */
+
+
+/*Break for Mobile Devices*/
+@media all and (max-width: 850px)    { 
+
+    /*Structure*/
+    .col { float:none !important; width:100% !important;margin: 20px 0;}
+    .wrapper { padding: 0 5%; }
+
+    /*Font-Sizes*/
+
+    h1 {font-size: 40px;margin-bottom: 30px;}
+    h2 {font-size: 30px;margin-bottom: 25px;}
+    h3 {font-size: 25px;}
+    h4 {font-size: 20px;}
+    h5 {font-size: 35px;}
+    h6 {font-size: 16px;}
+
+    .assurance h3 { font-size: 20px; }
+    
+    
+    /*===== HOME ==================================================*/   
+
+
+
+    /*==== HOME END=================================================*/   
+
+
+    /*==== PAGES =================================================*/   
+
+
+
+
+    /*==== PAGES END =================================================*/   
+    
+
+/* 
+====================================================================================
+--------------------------->>>>>>> MOBILE <<<<<<<---------------------------
+==================================================================================== */
+
+@media all and (max-width: 480px)    { 
+
+    .header .logo a img          { width: 124px }
+    .header .logo a              { background-color: transparent; padding: 5px 20px; padding-top: 8px; position: relative; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; /* future proofing */ -khtml-border-radius: 0px; /* for old Konqueror browsers */ }
+    .footer                      { width: 100% }
+}
+
+
+/* 
+====================================================================================
+--------------------------------->>>>>>> PRINT <<<<<<<------------------------------
+==================================================================================== */
+
+@media print {
+    *                                   { background: transparent !important; color: #000 !important; /* Black prints faster: h5bp.com/s */; box-shadow: none !important; text-shadow: none !important; }
+    a, a:visited                        { text-decoration: underline }
+    a[href]:after                       { content: " (" attr(href) ")" }
+    abbr[title]:after                   { content: " (" attr(title) ")" }
+    pre, blockquote                     { border: 1px solid #999; page-break-inside: avoid; }
+    thead                               { display: table-header-group; /* h5bp.com/t */ }
+    tr, img                             { page-break-inside: avoid }
+    img                                 { max-width: 100% !important }
+    @page                               { margin: 0.5cm }
+    p, h2, h3                           { orphans: 3; widows: 3; }
+    h2, h3                              { page-break-after: avoid }
+
+    /*Don't show links for images, or javascript/internal links*/
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after
+                                        { content: "" }
+
+/*--------------------------------------------------------------------------------
